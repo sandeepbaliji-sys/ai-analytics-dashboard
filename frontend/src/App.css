@@ -1,0 +1,35 @@
+body {
+  background: #12141c;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.kpi-card {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-card {
+  background: #1e2230;
+  padding: 20px;
+  border-radius: 10px;
+}

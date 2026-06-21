@@ -21,7 +21,7 @@ export default function Dashboard() {
   const [dashboardData, setDashboardData] = useState(null);
 
   useEffect(() => {
-    fetch("http://ai-analytics-dashboard-lajd.onrender.com/api/dashboard")
+    fetch("https://ai-analytics-dashboard-lajd.onrender.com/api/dashboard")
       .then((res) => res.json())
       .then((data) => {
         console.log("FULL DATA:", data);
@@ -34,12 +34,12 @@ export default function Dashboard() {
     const formData = new FormData();
     formData.append("file", e.target.files[0]);
 
-    await fetch("http://ai-analytics-dashboard-lajd.onrender.com/upload", {
+    await fetch("https://ai-analytics-dashboard-lajd.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
 
-    const response = await fetch("http://ai-analytics-dashboard-lajd.onrender.com/api/dashboard"
+    const response = await fetch("https://ai-analytics-dashboard-lajd.onrender.com/api/dashboard"
     );
 
     const data = await response.json();
